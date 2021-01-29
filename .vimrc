@@ -31,8 +31,15 @@ set hidden
 " Set the time (in milliseconds) spent idle until various actions occur
 set updatetime=500
 
-"Vim requires the term to begin with "xterm"
+" Vim requires the term to begin with "xterm"
 set term=xterm-256color
+
+" Disable backups
+set nobackup
+
+" Set undo dir for history storage
+set undodir=~/.vim/undodir
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " User interface
@@ -44,6 +51,9 @@ set backspace=eol,indent,start
 " Set the minimal amount of lignes under and above the cursor
 " Useful for keeping context when moving with j/k
 set scrolloff=5
+
+"Screen columns to keep to the left/right of the cursor
+set sidescrolloff=8
 
 " Show current mode
 set showmode
@@ -81,14 +91,17 @@ set fillchars=vert:│
 " Enables syntax highlighting
 syntax on
 
+"Color scheme"
+colorscheme challenger_deep
+
 " Allow mouse use in vim
 set mouse=a
 
 " Briefly show matching braces, parens, etc
 set showmatch
 
-" Enable line wrapping
-set wrap
+" Disable line wrapping
+set nowrap
 
 " Wrap on column 80
 set textwidth=79
@@ -98,6 +111,9 @@ set completeopt=longest,menuone
 
 " Highlight current line
 set cursorline
+
+" Wrap lines at convenient points
+set linebreak
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " Search options
@@ -162,3 +178,7 @@ if version >= 703
     set undodir=~/.vimtmp/undo
     silent !mkdir -p ~/.vimtmp/undo
 endif
+
+let g:netrw_liststyle = 3
+let g:netrw_browse_split = 2
+let g:netrw_winsize = 20
