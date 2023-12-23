@@ -1,0 +1,2 @@
+configuration {}
+@theme "/usr/share/rofi/themes/onedark.rasi"
