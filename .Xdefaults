@@ -1,0 +1,115 @@
+!-------------------------------------------------------------------------------
+! Xft settings
+!-------------------------------------------------------------------------------
+
+Xft.dpi:                    96
+Xft.antialias:              false
+Xft.rgba:                   rgb
+Xft.hinting:                true
+Xft.hintstyle:              hintslight
+
+!-------------------------------------------------------------------------------
+! URxvt settings
+! Colours lifted from Solarized (http://ethanschoonover.com/solarized)
+! More info at:
+! http://pod.tst.eu/http://cvs.schmorp.de/rxvt-unicode/doc/rxvt.1.pod
+!-------------------------------------------------------------------------------
+
+URxvt.depth:                32
+URxvt.geometry:             90x30
+URxvt.transparent:          false
+URxvt.fading:               0
+! URxvt.urgentOnBell:         true
+! URxvt.visualBell:           true
+URxvt.loginShell:           true
+URxvt.saveLines:            2000
+URxvt.internalBorder:       3
+URxvt.lineSpace:            0
+
+! Fonts
+URxvt.allow_bold:           false
+/* URxvt.font:                 -*-terminus-medium-r-normal-*-12-120-72-72-c-60-iso8859-1 */
+
+URxvt*font: xft:Monospace:pixelsize=13
+URxvt*boldFont: xft:Monospace:pixelsize=13
+
+! Fix font space
+URxvt*letterSpace: -1
+
+! Scrollbar
+URxvt.scrollStyle:          rxvt
+URxvt.scrollBar:            false
+
+! Perl extensions
+URxvt.perl-ext-common:      default,matcher
+URxvt.matcher.button:       1
+URxvt.urlLauncher:          firefox
+
+! Cursor
+URxvt.cursorBlink:          true
+URxvt.cursorColor:          #657b83
+URxvt.cursorUnderline:      false
+URxvt.cursorSize:           24
+
+! Pointer
+URxvt.pointerBlank:         true
+
+*background:   #282a36
+*foreground:   #eff0eb
+*cursorColor:  #9aedfe
+
+!*color0:      #33303b
+!*color8:      #4f4b58
+!*color1:      #ff5c57
+!*color9:      #ff5c57
+!*color2:      #5af78e
+!*color10:     #5af78e
+!*color3:      #f3f99d
+!*color11:     #f3f99d
+!*color4:      #57c7ff
+!*color12:     #57c7ff
+!*color5:      #ff6ac1
+!*color13:     #ff6ac1
+!*color6:      #9aedfe
+!*color14:     #9aedfe
+!*color7:      #eff0eb
+!*color15:     #eff0eb
+
+! Challenger Deep Xresources palette
+
+! special
+*.foreground:   #cbe3e7
+*.background:   #1b182c
+*.cursorColor:  #fbfcfc
+
+! black
+*.color0:       #100e23
+*.color8:       #565575
+
+! red
+*.color1:       #ff8080
+*.color9:       #ff5458
+
+! green
+*.color2:       #95ffa4
+*.color10:      #62d196
+
+! yellow
+*.color3:       #ffe9aa
+*.color11:      #ffb378
+
+! blue
+*.color4:       #91ddff
+*.color12:      #65b2ff
+
+! magenta
+*.color5:       #c991e1
+*.color13:      #906cff
+
+! cyan
+*.color6:       #aaffe4
+*.color14:      #63f2f1
+
+! white
+*.color7:       #cbe3e7
+*.color15:      #a6b3cc
